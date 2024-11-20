@@ -23,16 +23,15 @@
                         <div class="btn"></div>
                     </div>                                
                 </nav>
-                <div class="burger-menu">
-                    <input type="checkbox" id="burger-toggle">
-                    <label for="burger-toggle" class="burger-icon">&#9776;</label>
-                    <ul class="burger-items">
-                        <li><a href="#">Presets</a></li>
-                        <li><a href="#">Prints</a></li>
-                        <li><a href="#">Store</a></li>
-                        <li><a href="#">About</a></li>
+                <div class="burger-menu-toggle">
+                    <div class="line"></div>
+                    <div class="line"></div>
+                    <div class="line"></div>
+                    <ul class="show-menu">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">Product</a></li>
+                        <li><a href="#">Priking</a></li>
                         <li><a href="#">Contact</a></li>
-                        
                     </ul>
                 </div>
             </div>  
@@ -179,7 +178,12 @@
                       the two major realms of Classical physics: Newtonian mechanics</p>               
                     <div class="people">
                     <div class="pers">
-                        <div class="foto foto1"></div>
+                        <div class="foto foto1">
+                            <img src="img/pers1.png" alt="">
+                            <img src="img/pers2.png" alt="">
+                            <img src="img/pers3.png" alt="">
+                        </div>
+                        
                         <div class="text">                            
                             <h4>Ashley Fletcher</h4>
                             <p>CEO</p>                           
@@ -189,9 +193,11 @@
                             <img src="../YP/img/inst.png" alt="инстаграмм">
                             <img src="../YP/img/twitter.png " alt="twiter">                           
                         </div>
+                        <button class="prev-button" aria-label="предыдущий">&lt;</button>
+                        <button id="next-button" aria-label="следующий">&gt</button>
                     </div>
-                    <div class="pers">
-                        <div class="foto foto2"></div>
+                    <div class="pers p2">
+                        <div class="foto2"></div>
                         <div class="text">
                             <h4>Rodney Stratton</h4>
                             <p>Consultant</p>
@@ -204,8 +210,8 @@
                         </div>
                     </div>
 
-                    <div class="pers">
-                        <div class="foto foto3"> </div>
+                    <div class="pers p3">
+                        <div class="foto3"> </div>
                         <div class="text">
                             <h4>Avie Beaton</h4>
                             <p>CO Founder</p>
@@ -338,5 +344,6 @@
         </div>
     
     </footer>
+    <script src="script.js"></script>
 </body>
 </html> 
