@@ -580,26 +580,65 @@ footer h4 {
 }
 
 
-header .burger-menu {
+header .burger-menu-toggle {
     display: none;
+    cursor: pointer;
 }
+.line{
+    width: 30px;
+    height: 3px;
+    background-color: black;
+    margin: 5px 0;
+    transition: all 0.3s ease;
+}
+
 .lypa {
     display: none;
 }
 .btn {
     display: none;
 }
+.foto img{
+    display: none;
+}
 /*  мобильная версия*/
 @media (min-width: 375px) and (max-width: 720px) {
+    .ikonki{
+        display: none;
+    }
     .conteiner{
         width: 100%;
     }
-    header .menu {
+    header nav{
         display: none;
     }
-    header .burger-menu {
+    header{
+        flex-direction: column;
+        margin: 20px 0;
+        gap: 20px;
+        color: #FF7B47;
+    }
+    header .conteiner{
+        width: 100%;
+        gap: 210px;
+    }
+    .podval .conteiner{
+        width: 100%;
+    }
+    header .show-menu {
+       display: none;
+    }
+    header .burger-menu-toggle {
         display: block;
-        width: 73%;
+        cursor: pointer;margin-right: 10px;
+    }
+    header ul{
+        display: none;
+    }
+    header menu.show-menu{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
     .startscreen h1 {
         font-size: 27px; 
@@ -612,7 +651,9 @@ header .burger-menu {
     }
     header .container {
         flex-direction: column; 
-        align-items: flex-start; 
+        align-items: flex-start;
+        width: 100%;
+        gap: 210px;
     }
     .knopka1 button, .knopka2 button {
         font-size: 19px;
@@ -652,6 +693,12 @@ header .burger-menu {
     .present p {
         line-height: 20px;
     }
+    .person .p2{
+        display: none;
+    }
+    .person .p3{
+        display: none;
+    }
     .present .photo {
         width: 325px;
         height: 210px;
@@ -666,6 +713,9 @@ header .burger-menu {
     .modal h2 {
         font-size: 30px;
         margin-bottom: 10px;
+    }
+    .modal .clients{
+        width: 100%;
     }
     .modal p {
         font-size: 14px;
@@ -700,7 +750,7 @@ header .burger-menu {
         text-align: center;
     }
     .text2  {   
-        width: 470px;
+        width: 100%;
         padding-top: 15px;
     }
     .forma .num1 {
@@ -750,11 +800,15 @@ header .burger-menu {
         margin-top: -140px;
         width: 310px;
     }
+    .contact .conteiner{
+        width: 100%;
+    }
     .contact h3 {
         font-size: 14px;
         line-height: 24px;
     }
     .contact p {
+        width: 100%;
         font-size: 10px;
     }
     .text3 {
@@ -783,6 +837,7 @@ header .burger-menu {
     .podval .social {
         justify-content: left;
         margin-left: 190px;
+        width: 100%;
     }
     .podval .vse {
         flex-wrap: wrap;
@@ -793,6 +848,7 @@ header .burger-menu {
     }
     .podval .line {
         margin-top: 20px;
+        width: 100%;
     }
     .podval .vse div {
         margin-top: 0;      
@@ -814,9 +870,21 @@ header .burger-menu {
         margin-top: 137px;
     }
     footer h4 {
+        width: 100%;
         font-size: 12px;
         justify-content: left;
-        margin-left: 10px;
     }
-}
+    .podval .vse .text{
+        display: none;
+    }
+    .foto{
+        overflow: hidden;
+        position: relative;
+    }
+    .people {
+        text-align: center; 
+        max-width: 300px; 
+        margin: auto;
+    }
+}    
 
