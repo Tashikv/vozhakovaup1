@@ -317,9 +317,13 @@ header .menu {
 }
 .foto2 {
     background: url(../img/pers2.png);
+    width: 328px;
+    height: 231px;
 }
 .foto3 {
     background: url(../img/pers3.png);
+    width: 328px;
+    height: 231px;
 }
 .people .text h4{
     text-align: center;
